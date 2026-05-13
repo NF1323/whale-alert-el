@@ -1,2 +1,4 @@
 obteniendo informacion de https://whale-alert.io/whales.html
 Datos extraidos: 4 filas
+2026-05-12 21:34:41,088 - INFO - El bucket test-bucket no existe. Creándolo...
+2026-05-12 21:34:41,142 - INFO - Archivo whales_2026-05-12.csv subido correctamente al bucket test-bucket

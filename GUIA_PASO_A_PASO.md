@@ -88,5 +88,26 @@ Crea un nuevo commit que hace exactamente lo opuesto al commit que quieres desha
 git revert <codigo-del-commit>
 ```
 
+## 7. Versiones Maestras (Git Tags)
+
+Para marcar versiones importantes (hitos) y no depender de códigos extraños de commits, usamos **Tags**.
+
+### A. Crear un hito (versión)
+He marcado la versión actual como el punto de partida antes de MinIO:
+```powershell
+git tag -a v1.0-pre-minio -m "Version base antes de MinIO"
+git push origin --tags
+```
+
+### B. ¿Cómo volver a esta versión exacta?
+Si en el futuro rompes algo con MinIO y quieres volver a este estado exacto:
+```powershell
+# 1. Ver todas las versiones disponibles
+git tag
+
+# 2. Volver a la versión v1.0
+git checkout v1.0-pre-minio
+```
+
 ---
 **Nota:** El script está diseñado para ejecutarse siempre con el entorno virtual activo.
